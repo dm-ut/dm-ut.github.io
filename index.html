@@ -1,19 +1,22 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" style="font-family: 'Inter';">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/ut-logo.png" />
+    <link rel="icon" type="image/svg+xml" href="/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>NLP Course | ECE at University of Tehran</title>
+    <title>Data Mining Course | ECE at University of Tehran</title>
   </head>
   <body>
     <div id="app" class="">
-    <header x-data="{mobileNavOpen:false}" class=" py-2 px-4 shadow-lg bg-primary-600 flex text-white justify-between items-center">
+    <header x-data="{mobileNavOpen:false}" class=" py-4 px-4 shadow-lg bg-primary-600 flex text-white justify-between items-center">
       <div class="left flex items-center gap-2">
-        <img src="/ut-logo.png" alt="" class="w-20 shadow-lg" srcset="">
+        <img src="/logo.png" alt="" class="w-20 shadow-lg" srcset="">
         <div class="">
           <h1>
-            Natural Language Processing  <br>
+            Data Mining <br>
           </h1>
 
           <p class="text-xs font-thin">Faculty of Electrical & <br> Computer Engineering, <br> University of Tehran
@@ -34,7 +37,7 @@
         </li>
       </ul>
       <nav  x-transition x-transition.origin.right @click.outside="mobileNavOpen = false"  class="min-h-screen bg-white w-10/12 max-w-[32rem] fixed right-0 top-0 z-[100] shadow-2xl border-l border-primary-700/10" x-show='mobileNavOpen'>
-        <h2 class="bg-primary-50 rounded-xl m-4 shadow-sm text-primary-500 text-center py-4 px-2 font-semibold">Natural Language Processing Course Web Page <br> Spring 2024 </h2>
+        <h2 class="bg-primary-50 rounded-xl m-4 shadow-sm text-primary-500 text-center py-4 px-2 font-semibold">Data Mining Course Web Page <br> Spring 2024 </h2>
         <ul class=" divide-y-2  px-8   justify-between flex flex-col text-primary-600 font-semibold w-full text-center text-lg  ">
           <li class="py-4">
             <a href="#staff">Teaching Staff</a>
@@ -48,36 +51,90 @@
         </ul>
       </nav>
     </header>
-    <section id="intro" class="px-6 py-8 container">
-
-      Natural Language Processing (NLP) stands as a pivotal discipline within the domain of artificial intelligence (AI), facilitating the comprehension and generation of human language. Recent strides in deep learning methodologies have significantly augmented the capabilities of NLP systems, driving breakthroughs across various linguistic tasks.
+    <section id="intro" class="relative flex flex-col gap-4 px-6 py-8 container my-6 border-primary-100 border rounded-xl bg-primary-50">
+      <img src="/public/hero.jpeg" alt="" class="rounded-3xl border-primary-100 shadow-lg">
+      <div class="right flex flex-col px-2 z-10 ">
+        <h1 class="font-black text-3xl">Data Mining </h1>
+        <h2 class="text-gray-500">Faculty of Electrical & Computer Engineering</h2>
+        <h2 class="text-lg">University of Tehran</h2>
+        <p class="mt-4 text-gray-500">Spring 2024</p>
+        <p class=" text-lg">Dr. Azadeh Shakery</p>
+        <a href="" class="bg-primary-500 self-start   text-white px-4 py-2 rounded-lg mt-6 text-lg"> Overview </a>
+      </div>
+      <img src="/logo.png" alt="" class="absolute bottom-0 right-0 opacity-[0.60] -rotate-[25deg] scale-[1.1] z-0">
     </section>
-    <section id="staff" class=" bg-primary-50 px-6 py-8">
+    <section id="content" class="px-6 py-8 ">
+      <div class="container">
+        <h1 class="font-bold text-xl">Content</h1>
+        <p class="mt-4">
+          This course provides a comprehensive introduction to leading data mining techniques for deriving insights 
+          from data. Core topics covered draw from 
+          the textbook <a class="text-blue-500" href="https://shop.elsevier.com/books/data-mining/han/978-0-12-811760-6">
+            “Data Mining: Concepts and Techniques” (Han, Kamber, Pei, 2022)
+           </a> and include: 
+        </p>
+        <ol class="list-decimal pl-8 py-4">
+          <li>
+            Data exploration and visualization 
+            </li>
+            <li>
+
+              Data warehousing
+            </li>
+            <li>
+
+              Online analytical processing (OLAP)
+            </li>
+            <li>
+
+              Frequent pattern mining
+            </li>
+            <li>
+
+              Classification models
+            </li>
+            <li>
+
+              Clustering analysis
+            </li>
+            <li>
+
+              Deep learning, and outlier detection
+            </li>
+
+          
+        </ol>
+        <p>
+          Equal emphasis is placed on underlying theory and practical application using Python across domains like business, research, and public policy. Through real-world projects and assignments, students gain abundant hands-on experience leveraging these essential data mining approaches to uncover intelligence and inform data-driven decision making.
+        </p>
+      </div>
+    </section>
+    <section id="staff" class=" border-primary-100 py-10 border rounded-xl bg-primary-50 container">
       <div class="container flex flex-col lg:items-start lg:justify-center lg:flex-row gap-10 items-center">
         <div class="left flex-col justify-center items-center gap-20 ">
           <article class="flex flex-col items-center">
             <h2 class="font-bold sm:text-xl">
               Instructor
             </h2>
-            <img src="/faili.jpg" alt="" class="border-4 border-primary-400 w-36 sm:w-52 mt-5 lg:mt-9 object-cover rounded-full">
-            <p class="mt-1 sm:text-lg text-nowrap">Dr. Hesham Faili</p>
+            <img src="/shakery.png" alt="" class="border-4 border-primary-400 w-36 sm:w-52 mt-5 lg:mt-9 object-cover rounded-full">
+            <p class="mt-1 sm:text-lg text-nowrap">Dr. Azadeh Shakery</p>
             <div class="sm:[&>a>img]:h-8 [&>a>img]:h-6 items-center flex gap-2 mt-1">
-              <a href="https://www.linkedin.com/in/heshaam-faili-7b9b2468/?originalSubdomain=ir"><img src="/logo-linkedin.svg" alt="" class="sm:!h-7 !h-5"></a>
-              <a href="mailto:hfaili@ut.ac.ir"><img src="/mail-open-outline.svg" alt=""></a>
-              <a href="https://ece.ut.ac.ir/en/~hfaili"><img src="/link.svg" alt=""></a>
+              <a href="https://scholar.google.nl/citations?hl=en&user=E-QpN74AAAAJ"><img src="/school.svg" alt="" class="sm:!h-7 !h-5"></a>
+              <a href="mailto:shakery@ut.ac.ir"><img src="/mail-open-outline.svg" alt=""></a>
+              <a href="https://ece.ut.ac.ir/en/~shakery"><img src="/link.svg" alt=""></a>
             </div>
           </article>
           <article class="flex flex-col items-center mt-10">
             <h2 class="font-bold sm:text-xl text-nowrap">
               Course Manager
             </h2>
-            <img src="/peymani.png" alt="" class="border-4 border-primary-400 w-36 sm:w-52 mt-5 object-cover rounded-full">
-            <p class="mt-1 sm:text-lg text-nowrap">Samaneh Peymani Rad</p>
+            <img src="/vahid.jpg" alt="" class="border-4 border-primary-400 w-36 sm:w-52 mt-5 object-cover rounded-full">
+            <p class="mt-1 sm:text-lg text-nowrap">Vahid Rahimzadeh</p>
             <div class="sm:[&>a>img]:h-8 [&>a>img]:h-6 items-center flex gap-2 mt-1">
-              <a href="https://www.linkedin.com/in/samaneh-peymani-rad-40736a144"><img src="/logo-linkedin.svg" alt="" class="sm:!h-7 !h-5"></a>
-              <a href=""><img src="/mail-open-outline.svg" alt=""></a>
+              <a href="https://www.linkedin.com/in/vavre/"><img src="/logo-linkedin.svg" alt="" class="sm:!h-7 !h-5"></a>
+              <a href="mailto:vahyd@live.com"><img src="/mail-open-outline.svg" alt=""></a>
             </div>
-          </article>
+        </article>
         </div>
         <div class="right flex flex-col items-center gap-3">
           <h2 class="font-bold text-xl">
@@ -85,11 +142,11 @@
           </h2>
           <div class="grid [&>article>img]:border-2 [&>article>img]:border-primary-500  grid-cols-2 text-center -mx-10 sm:mx-0 justify-center lg:items-start lg:justify-center lg:grid md:grid-cols-3 gap-1  ">
             <article class="flex flex-col items-center">
-              <img src="/rahimzadeh.jpg" alt="" class="sm:w-52 w-36 mt-5 object-cover rounded-full">
-              <p class="text-xs sm:text-sm font-light mt-2">Chatbots & Dialogue Systems</p>
-              <p class="text-xs sm:text-sm text-gray-600">CA6, Quiz 6, Workshop 3</p>
+              <img src="/mj.png" alt="" class="sm:w-52 w-36 mt-5 object-cover rounded-full">
+              <p class="text-xs sm:text-sm font-light mt-2">Data Exploration & Visualization</p>
+              <p class="text-xs sm:text-sm text-gray-600">CA1</p>
               <p class="mt-1 sm:text-lg">
-                Vahid Rahimzadeh
+                Mohammad Javad Kamyab
               </p>
               <div class="sm:[&>a>img]:h-8 [&>a>img]:h-6 items-center flex gap-2 mt-1">
                 <a href="https://www.linkedin.com/in/vavre/"><img src="/logo-linkedin.svg" alt="" class="sm:!h-7 !h-5"></a>
@@ -97,11 +154,11 @@
               </div>
             </article>
             <article class="flex flex-col items-center">
-              <img src="/momeni-nezhad.jpg" alt="" class="sm:w-52 w-36 mt-5 object-cover rounded-full">
-              <p class="text-xs sm:text-sm font-light mt-2">Transformer, Pre-training, Post-training, LLMs</p>
-              <p class="text-xs sm:text-sm text-gray-600">CA4, Quiz 4, Workshop 1</p>
+              <img src="/diba.png" alt="" class="sm:w-52 w-36 mt-5 object-cover rounded-full">
+              <p class="text-xs sm:text-sm font-light mt-2">Data Warehousing & OLAP</p>
+              <p class="text-xs sm:text-sm text-gray-600">CA2, Workshop 1</p>
               <p class="mt-1 sm:text-lg">
-                MohammadJavad Momeni 
+                Diba Rashidi 
               </p>
               <div class="sm:[&>a>img]:h-8 [&>a>img]:h-6 items-center flex gap-2 mt-1">
                 <a href="https://www.linkedin.com/in/mohammad-javad-momeni-219498249/"><img src="/logo-linkedin.svg" alt="" class="sm:!h-7 !h-5"></a>
@@ -109,11 +166,11 @@
               </div>
             </article>
             <article class="flex flex-col items-center">
-              <img src="/baledi.jpg" alt="" class="sm:w-52 w-36 mt-5 object-cover rounded-full">
-              <p class="text-xs sm:text-sm font-light mt-2">Transformer, Pre-training, Post-training, LLMs</p>
-              <p class="text-xs sm:text-sm text-gray-600">CA4, Quiz 4, Workshop 2</p>
+              <img src="/ali.png" alt="" class="sm:w-52 w-36 mt-5 object-cover rounded-full">
+              <p class="text-xs sm:text-sm font-light mt-2"> Frequent Pattern Mining </p>
+              <p class="text-xs sm:text-sm text-gray-600">CA3</p>
               <p class="mt-1 sm:text-lg">
-                Danial Baledi
+                Ali Adibi
               </p>
               <div class="sm:[&>a>img]:h-8 [&>a>img]:h-6 items-center flex gap-2 mt-1">
                 <a href="https://www.linkedin.com/in/danial-baledi-b72ab0288/"><img src="/logo-linkedin.svg" alt="" class="sm:!h-7 !h-5"></a>
@@ -121,11 +178,11 @@
               </div>
             </article>
             <article class="flex flex-col items-center">
-              <img src="/namazi-fard.jpeg" alt="" class="sm:w-52 w-36 mt-5 object-cover rounded-full">
-              <p class="text-xs sm:text-sm font-light mt-2">Sentiment, Embedding, Naive Bayes</p>
-              <p class="text-xs sm:text-sm text-gray-600">CA2, Quiz 2</p>
+              <img src="/hosein.png" alt="" class="sm:w-52 w-36 mt-5 object-cover rounded-full">
+              <p class="text-xs sm:text-sm font-light mt-2"> Classification & ML </p>
+              <p class="text-xs sm:text-sm text-gray-600">CA4</p>
               <p class="mt-1 sm:text-lg">
-                Danial Namazi Fard
+                Hossein Seifi
               </p>
               <div class="sm:[&>a>img]:h-8 [&>a>img]:h-6 items-center flex gap-2 mt-1">
                 <a href="https://www.linkedin.com/in/namazifard/"><img src="/logo-linkedin.svg" alt="" class="sm:!h-7 !h-5"></a>
@@ -134,11 +191,11 @@
               </div>
             </article>
             <article class="flex flex-col items-center">
-              <img src="/ashouri.jpg" alt="" class="sm:w-52 h-36 sm:h-52 w-36 mt-5 object-cover rounded-full">
-              <p class="text-xs sm:text-sm font-light mt-2">Sentiment, Embedding, Naive Bayes</p>
-              <p class="text-xs sm:text-sm text-gray-600">CA2, Quiz 2</p>
+              <img src="/mohammadreza.png" alt="" class="sm:w-52 h-36 sm:h-52 w-36 mt-5 object-cover rounded-full">
+              <p class="text-xs sm:text-sm font-light mt-2"> Clustering Methods</p>
+              <p class="text-xs sm:text-sm text-gray-600">CA5</p>
               <p class="mt-1 sm:text-lg">
-                Nastaran Ashouri
+                Mohammad Reza Alaei
               </p>
               <div class="sm:[&>a>img]:h-8 [&>a>img]:h-6 items-center flex gap-2 mt-1">
                 <a href="https://www.linkedin.com/in/nastaran-ashoori-44385a155"><img src="/logo-linkedin.svg" alt="" class="sm:!h-7 !h-5"></a>
@@ -146,11 +203,11 @@
               </div>
             </article>
             <article class="flex flex-col items-center">
-              <img src="/bicharanlu.png" alt="" class="sm:w-52 w-36 sm:!h-52 aspect-square mt-5 object-cover rounded-full">
-              <p class="text-xs sm:text-sm font-light mt-2">Neural Language Models(RNN,LSTM,GRU)</p>
-              <p class="text-xs sm:text-sm text-gray-600">CA3, Quiz 2</p>
+              <img src="/sadegh.png" alt="" class="sm:w-52 w-36 sm:!h-52 aspect-square mt-5 object-cover rounded-full">
+              <p class="text-xs sm:text-sm font-light mt-2">Deep Learning & Outlier Detection</p>
+              <p class="text-xs sm:text-sm text-gray-600">CA6 </p>
               <p class="mt-1 sm:text-lg">
-                Parhan Bicharanlu
+                Mohammad Sadegh Sadeghi
               </p>
               <div class="sm:[&>a>img]:h-8 [&>a>img]:h-6 items-center flex gap-2 mt-1">
                 <a href="https://www.linkedin.com/in/parham-bicharanlu-46440b163/"><img src="/logo-linkedin.svg" alt="" class="sm:!h-7 !h-5"></a>
@@ -158,43 +215,8 @@
               </div>
             </article>
  
-            <article class="flex flex-col items-center">
-              <img src="/bagherinia.jpg" alt="" class="sm:w-52 w-36 sm:h-52 mt-5 object-cover rounded-full">
-              <p class="text-xs sm:text-sm font-light mt-2">Tokenization ,Language Modeling with N-Grams</p>
-              <p class="text-xs sm:text-sm text-gray-600">CA1, Quiz 1</p>
-              <p class="mt-1 sm:text-lg">
-                Marzieh Bagheri Nia
-              </p>
-              <div class="sm:[&>a>img]:h-8 [&>a>img]:h-6 items-center flex gap-2 mt-1">
-                <a href="https://www.linkedin.com/in/marzieh-bagherinia-51087a292/"><img src="/logo-linkedin.svg" alt="" class="sm:!h-7 !h-5"></a>
-                <a href=""><img src="/mail-open-outline.svg" alt=""></a>
-              </div>
-            </article>
-            <article class="flex flex-col items-center">
-              <img src="/masoudi.jpg" alt="" class="sm:w-52 w-36 sm:h-52 mt-5 object-cover rounded-full">
-              <p class="text-xs sm:text-sm font-light mt-2">Neural Machine Translation</p>
-              <p class="text-xs sm:text-sm text-gray-600">CA5, Quiz 5</p>
-              <p class="mt-1 sm:text-lg">
-                Mostafa Masoudi
-              </p>
-              <div class="sm:[&>a>img]:h-8 [&>a>img]:h-6 items-center flex gap-2 mt-1">
-                <a href="https://www.linkedin.com/in/mostafa-masoudi-551650242"><img src="/logo-linkedin.svg" alt="" class="sm:!h-7 !h-5"></a>
-                <a href="mailto:mstfmasoudii@gmail.com"><img src="/mail-open-outline.svg" alt=""></a>
-              </div>
-            </article>
-            <article class="flex flex-col items-center">
-              <img src="/karimi.jpeg" alt="" class="sm:w-52 w-36 sm:h-52 mt-5 object-cover rounded-full">
-              <p class="text-xs sm:text-sm font-light mt-2">Chatbots & Dialogue Systems</p>
-              <p class="text-xs sm:text-sm text-gray-600">CA6, Quiz 6</p>
-              <p class="mt-1 sm:text-lg">
-                Sepehr Karimi
-              </p>
-              <div class="sm:[&>a>img]:h-8 [&>a>img]:h-6 items-center flex gap-2 mt-1">
-                <a href="https://www.linkedin.com/in/sepehrkarimia"><img src="/logo-linkedin.svg" alt="" class="sm:!h-7 !h-5"></a>
-                <a href="mailto:sepehrkarimi@ut.ac.ir"><img src="/mail-open-outline.svg" alt=""></a>
-                <a href="https://sepehr-karimi.github.io"><img src="/link.svg" alt=""></a>
-              </div>
-            </article>
+        
+      
  
   
           </div>
@@ -204,30 +226,51 @@
     <section id="logistics" class="px-6 py-8 ">
       <div class="container">
         <h1 class="font-bold text-xl">Logistics</h1>
-        <p class="mt-4">
-          Class Location and Timing: Room 203, Tehran University's College of Engineering. Saturdays and Mondays, 9:00 AM to 10:30 AM Iran Standard Time. <br>
-        
-        All teaching videos from previous years' sessions are available on the course's Telegram channel for enrolled students. <br>
-        
-        The course policies document has been uploaded to the eLearn system for enrolled students.
-        </p>
-      </div>
-    </section>
-    <section id="content" class="px-6 py-8 bg-primary-50">
-      <div class="container">
-        <h1 class="font-bold text-xl">Content</h1>
-        <p class="mt-4">
-          This course begins with foundational concepts in NLP and gradually advances to more sophisticated models, comprehensively covering a range of NLP tasks, including machine translation, sentiment analysis, text generation, entity recognition, and text classification. Additionally, it delves into the topic of dialogue systems and chatbots, exploring their design principles and practical implementations. Moreover, the course offers a rigorous exploration of advanced neural network architectures tailored specifically for NLP, empowering participants with a profound understanding of cutting-edge techniques and their applications in real-world scenarios.
-        
-        Throughout the course, students will develop proficiency in various NLP tasks through their participation in continuous assessment activities (CAs). Beginning with fundamental concepts such as data tokenization and basic natural language processing model training, they will progressively advance to explore more complex neural network architectures like RNNs, LSTMs, and GRUs, alongside pertinent methodologies. As they progress, their CAs will emphasize the practical application of their knowledge to contemporary models such as BERT and LLMs. Moreover, students will enhance their skills through hands-on exercises and projects, specifically geared towards machine translation and dialogue systems. This approach ensures that students not only grasp theoretical concepts but also gain practical experience in implementing NLP techniques in real-world scenarios.
-        
-        You can download the course schedule file from the following link: [Link to Course Schedule File]
-        </p>
+        <h2 class="mt-4 font-bold text-lg">
+          Format
+        </h2>
         <p>
-          Throughout the course, students will actively participate in workshops. These workshops are designed to bolster their skills and proficiency in NLP through practical engagement . Following the completion of each workshop, video recordings will be published for public access.
+        
+This course is primarily offered in a classroom setting, held twice weekly on Sundays and Tuesdays from 10:30am to 12:00pm. On special occasions, online classes may be conducted using <a class="text-blue-500" href="https://elearn.ut.ac.ir/">Elearn Platform</a> - students will be notified in advance.
+
+        </p>
+        <h2 class="mt-4 font-bold text-lg">
+          Workload Expectation
+        </h2>
+        <p>
+        
+
+          Students can expect 6 computer/theory-based assignments over the duration of the course, with workload varying based on subject complexity. Additionally, students will deliver one paper presentation. Supplementary self-study outside of lecture times will be required to excel in this rigorous graduate course.
+        </p>
+        <h2 class="mt-4 font-bold text-lg">
+          Textbook & Materials
+        </h2>
+        <p>
+          <ul class="list-disc pl-8 pt-2">
+            <li>
+              <a class="text-blue-500" href="https://shop.elsevier.com/books/data-mining/han/978-0-12-811760-6">
+                “Data Mining: Concepts and Techniques” (Han, Kamber, Pei, 2022)
+               </a> 
+            </li>
+          </ul>
+          
+        </p>
+        <h2 class="mt-4 font-bold text-lg">
+          Contact Information
+        </h2>
+        <p>
+            <ul class="pl-3 pt-2">
+              <li>
+                <a href="mailto:shakery@ut.ac.ir" class="font-bold text-blue-900">shakery@ut.ac.ir</a> - Dr. Azadeh Shakery, Instructor
+              </li>
+              <li>
+                <a href="mailto:vahyd@live.com" class="font-bold text-blue-900">vahyd@live.com</a> - Vahid Rahimzadeh, Head Teaching Assistant
+              </li>
+            </ul>      
         </p>
       </div>
     </section>
+   
     </div>
     <script type="module" src="/main.js"></script>
   </body>
