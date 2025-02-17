@@ -10,6 +10,7 @@ course_manager:
   image: vahid.jpg
   email: vahyd@live.com
   linkedin: https://www.linkedin.com/in/vavre/
+  scholar: https://scholar.google.com/citations?user=CTiPTggAAAAJ&hl=en&oi=ao
 
 teaching_assistants:
   - name: Saeed Rahimi
