@@ -1,7 +1,5 @@
 {
     "scripts": {
-        "watch:css": "tailwindcss -i ./_sass/main.scss -o ./assets/css/styles.css --watch",
-        "build:css": "tailwindcss -i ./_sass/main.scss -o ./assets/css/styles.css --minify",
         "build": "jekyll build",
         "serve": "jekyll serve"    
     },
