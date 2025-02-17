@@ -1,0 +1,66 @@
+instructor:
+  name: Dr. Azadeh Shakery
+  image: shakery.png
+  email: shakery@ut.ac.ir
+  scholar: https://scholar.google.nl/citations?hl=en&user=E-QpN74AAAAJ
+  website: https://ece.ut.ac.ir/en/~shakery
+
+course_manager:
+  name: Vahid Rahimzadeh
+  image: vahid.jpg
+  email: vahyd@live.com
+  linkedin: https://www.linkedin.com/in/vavre/
+
+teaching_assistants:
+  - name: Saeed Rahimi
+    image: saeed.jpg
+    role: Data Exploration & Visualization
+    assignment: CA1
+    email: saeedrhimi2@gmail.com
+
+  - name: Farshad Hessami
+    image: farshad.jpg
+    role: Data Exploration & Visualization
+    assignment: CA1
+    email: farcshad@gmail.com
+
+  - name: AmirHossein Roshandel
+    image: amirhosein.jpg
+    role: Data Warehousing & OLAP
+    assignment: CA2
+    email: roshandel2004@gmail.com
+    linkedin: https://www.linkedin.com/in/amir-hossein-roshandel-0ab09a138/
+
+  - name: Mohammad Mahdi Barghi
+    image: mohammad_mahdi.jpg
+    role: Frequent Pattern Mining
+    assignment: CA3
+    email: Mmbarghi@ut.ac.ir
+    linkedin: https://www.linkedin.com/in/mohammadmahdibarghi
+
+  - name: Mohammad Reza Alaei
+    image: mohammadreza.png
+    role: Classification & ML
+    assignment: CA4
+    email: mr.alaei@ut.ac.ir
+    linkedin: http://linkedin.com/in/mohammad-reza-alaei-4b808717a
+
+  - name: Parmida Ghamari
+    image: parmida.jpg
+    role: Classification & ML
+    assignment: CA4
+    email: parmida.ghamari@gmail.com
+    linkedin: https://www.linkedin.com/in/parmida-ghamari
+
+  - name: Sina Kargaran
+    image: sina.jpg
+    role: Clustering Methods
+    assignment: CA5
+    email: kargaran.sina@gmail.com
+    linkedin: https://www.linkedin.com/in/sina-kargaran-06a436207/
+
+  - name: Parmis Bathayan
+    image: parmis.jpg
+    role: Deep Learning & Outlier Detection
+    assignment: CA6
+    email: parmisbathaeiyan@gmail.com

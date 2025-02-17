@@ -1,0 +1,39 @@
+title: Advanced Data Mining Course
+description: Data Mining Course at University of Tehran
+baseurl: "dm-ut.github.io" # Replace with your repo name
+url: "https://dm-ut.github.io" # Replace with your GitHub Pages URL
+
+collections:
+  years:
+    output: true
+    permalink: /:name/
+
+defaults:
+  - scope:
+      path: ""
+      type: "years"
+    values:
+      layout: "year"
+
+sass:
+  style: compressed
+  sourcemap: never
+
+plugins:
+  - jekyll-postcss
+
+postcss:
+  cache: false
+
+
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - node_modules
+  - package.json
+  - package-lock.json
+  - tailwind.config.js
+  - postcss.config.js

@@ -1,0 +1,67 @@
+<header id="header" class="fixed top-0 w-full z-20 opacity-[0.95] backdrop-blur-xl transition-all transform py-4 px-4 shadow-lg bg-primary-600 flex text-white justify-between lg:justify-start lg:gap-20 items-center">
+    <div class="left flex items-center gap-2">
+      <img src="{{ site.baseurl }}/assets/images/logo.png" alt="" class="w-20 shadow-lg">
+      <div class="">
+        <h1>
+          Advanced Data Mining <br>
+        </h1>
+        <p class="text-xs font-thin">
+          Faculty of Electrical & <br> Computer Engineering, <br> University of Tehran
+        </p>
+      </div>
+    </div>
+    
+    <!-- Mobile Menu Button -->
+    <img src="{{ site.baseurl }}/assets/images/menu-outline.svg" 
+         class="fill-white w-16 lg:hidden" 
+         @click="mobileNavOpen = true" 
+         alt="menu">
+    
+    <!-- Desktop Navigation -->
+    <ul class="justify-between hidden lg:flex lg:gap-8">
+      <li>
+        <a href="#overview">Overview</a>
+      </li>
+      <li>
+        <a href="#content">Content</a>
+      </li>
+      <li>
+        <a href="#staff">Teaching Staff</a>
+      </li>
+      <li>
+        <a href="#logistics">Logistics</a>
+      </li>
+      <li>
+        <a href="#archive">Archive</a>
+      </li>    
+    </ul>
+  </header>
+  
+  <!-- Mobile Navigation Menu -->
+  <nav x-transition 
+       x-transition.origin.right 
+       @click.outside="mobileNavOpen = false" 
+       class="min-h-screen lg:hidden bg-white w-10/12 max-w-[32rem] fixed right-0 top-0 z-[100] shadow-2xl border-l border-primary-700/10" 
+       x-show="mobileNavOpen">
+    <h2 class="bg-primary-50 rounded-xl m-4 shadow-sm text-primary-500 text-center py-4 px-2 font-semibold">
+      Advanced Data Mining Course Web Page <br> Spring {{ page.year }}
+    </h2>
+    <ul class="divide-y-2 px-8 justify-between flex flex-col text-primary-600 font-semibold w-full text-center text-lg">
+      <li class="py-4">
+        <a @click="mobileNavOpen = false" href="#overview">Overview</a>
+      </li>
+      <li class="py-4">
+        <a @click="mobileNavOpen = false" href="#content">Content</a>
+      </li>
+      <li class="py-4">
+        <a @click="mobileNavOpen = false" href="#staff">Teaching Staff</a>
+      </li>
+      <li class="py-4">
+        <a @click="mobileNavOpen = false" href="#logistics">Logistics</a>
+      </li>
+      <li class="py-4">
+        <a @click="mobileNavOpen = false" href="#archive">Archive</a>
+      </li>  
+    </ul>
+  </nav>
+  
